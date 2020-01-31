@@ -1,0 +1,71 @@
+*{margin:0;padding:0}
+ul{list-style:none}
+.cf::after{content:"";clear:both;display:block}
+a{color:#000;text-decoration:none}
+body{font-family:"굴림"}
+header{width:1100px;margin:0 auto;background:url(../top.jpg) 50% 95%;background-size:cover;height:350px}
+h1{color:#fff;text-shadow:-10px -10px 3px #000;padding:60px 0 0 110px;font-size:40px;font-family:"Times New Roman"}
+nav{font-size:25px;background:#555;height:60px;width:1100px;margin:0 auto;line-height:60px}
+    nav li{float:left;width:16%;font-weight:bold}
+        nav li a{color:#fff;display:block;width:100%;text-align:center}
+
+.wrap{width:1100px;margin:0 auto;height:727px}
+    section{width:800px;float:left;background:#eee}
+        h2{text-align:center;font-size:40px;padding:20px}
+        article{width:360px;height:300px;float:left;border:1px solid #333;margin:0 0px 20px 25px;padding:20px;box-sizing:border-box}
+            article h3{font-size:24px;padding-bottom:10px}
+            article p{font-size:20px;line-height:28px;text-align:justify}
+
+
+    aside{width:300px;float:left;text-align:center;background:#AF937D;height:100%}
+        aside img{text-align:center;width:220px;height:auto;margin-bottom:30px}
+        .img4{display:none}
+
+footer{text-align:center;font-family:"Times New Roman";font-size:20px;color:#fff;background:#333;height:60px;line-height:60px;width:1100px;margin:0 auto}
+
+@media screen and (max-width:1023px) and (min-width:601px){
+    header{width:700px;height:250px;margin:0 auto;background:url(../top.jpg) 50% 95%;background-size:cover}
+    h1{color:#fff;text-shadow:-10px -10px 3px #000;padding:60px 0 0 110px;font-size:40px;font-family:"Times New Roman"}
+    nav{font-size:20px;background:#555;height:60px;width:700px;margin:0 auto;line-height:60px}
+        nav li{float:left;width:16%;font-weight:bold}
+        nav li:first-child{margin-left:15px}
+            nav li a{color:#fff;display:block;width:100%;text-align:center}
+
+    .wrap{width:700px;margin:0 auto;height:980px}
+        section{width:700px;float:left;background:#eee;padding-bottom:30px}
+            h2{text-align:center;font-size:36px;padding:20px}
+            article{width:320px;height:280px;float:left;border:1px solid #333;margin:0 0px 20px 20px;padding:20px;box-sizing:border-box}
+                article h3{font-size:24px;padding-bottom:10px}
+                article p{font-size:20px;line-height:28px;text-align:justify}
+
+
+        aside{width:700px;float:left;text-align:center;background:#AF937D;height:270px}
+            aside img{text-align:center;width:220px;height:150px;margin-bottom:30px}
+            .img4{display:none}
+
+    footer{text-align:center;font-family:"Times New Roman";font-size:20px;color:#fff;background:#333;height:60px;line-height:60px;width:700px;margin:0 auto}
+}
+
+
+
+@media(max-width:600px){
+    header{width:100%;height:150px;margin:0 auto;background:url(../top.jpg) 50% 90%;background-size:cover}
+    h1{color:#fff;text-shadow:-10px -10px 3px #000;padding:30px 0 0 50px;font-size:40px;font-family:"Times New Roman"}
+    nav{font-size:20px;background:#555;height:120px;width:100%;margin:0 auto;line-height:60px}
+        nav li{float:left;width:33%;font-weight:bold}
+            nav li a{color:#fff;display:block;width:100%;text-align:center}
+
+    .wrap{width:100%;margin:0 auto;height:auto}
+        section{width:100%;float:left;background:#eee;padding-bottom:30px}
+            h2{text-align:center;font-size:36px;padding:20px}
+            article{width:95%;float:left;border:1px solid #333;margin:0 0px 20px 20px;padding:20px;box-sizing:border-box;height:50%}
+                article h3{font-size:24px;padding-bottom:10px}
+                article p{font-size:20px;line-height:28px;text-align:justify}
+
+
+        aside{width:100%;float:left;text-align:center;background:#AF937D;padding-bottom:20px}
+            aside img{text-align:center;width:220px;height:150px;margin-bottom:20px;margin-left:10px;display:inline-block}
+            .img4{display:inline-block}
+
+    footer{text-align:center;font-family:"Times New Roman";font-size:20px;color:#fff;background:#333;height:60px;line-height:60px;width:100%;margin:0 auto}
+}
