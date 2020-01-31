@@ -1,0 +1,78 @@
+*{margin:0;padding:0}
+@media screen and (max-width:600px){
+    #wrapper{width:100%}
+    header{height:120px;background:#f46075 url(../nav2.png) no-repeat 90% center;background-size:120px}
+    header h1{font-family:'Henny penny',cursive;margin-top:25px;margin-left:20px;color:#fff;float:left}
+    nav{height:100px;background:#aaa}
+        nav ul{list-style:none}
+            nav ul li{float:left;width:50%;margin-top:8px}
+                nav ul li a{display:block;width:140px;height:35px;text-decoration:none;color:#fff;font-weight:bold;text-align:center;margin:0 auto}
+                nav ul li a:hover{background:#f46075;border-radius:18px}
+
+    section{float:none;width:100%;background-color:#ddd;padding:10px 0}
+        section h2{margin:10px 0;text-align:center}
+        section article{width:85%;border:1px solid #333;float:none;padding:10px;margin:10px auto}
+            section article p{font-size:12px}
+            section article h3{padding-bottom:10px}
+
+    aside{text-align:center;float:none;width:100%;padding:10px 0;background:#ffc}
+        aside h2{margin-top:10px}
+        aside img{margin-top:10px;width:75%;height:auto;display:block;margin:10px auto}
+
+    footer{clear:both;height:50px;line-height:50px;text-align:center;background:#333;color:#fff}
+    }
+
+
+
+
+@media screen and (max-width:1023px) and (min-width:601px){
+    #wrapper{width:580px;margin:0 auto}
+    header{height:160px;background:#f46075 url(../nav2.png) no-repeat right center}
+    header h1{font-family:'Henny penny',cursive;margin-top:40px;margin-left:80px;color:#fff;float:left}
+    nav{height:50px;background:#aaa}
+        nav ul{list-style:none}
+            nav ul li{float:left;margin-left:10px;margin-top:8px}
+                nav ul li a{display:block;width:120px;height:35px;text-decoration:none;color:#fff;font-weight:bold;text-align:center}
+                nav ul li a:hover{background:#f46075;border-radius:18px}
+
+    section{float:left;width:580px;height:500px;background-color:#ddd;padding:1px 0 0}
+        section h2{margin-top:10px;margin-bottom:10px;text-align:center}
+        section article{width:234px;height:180px;border:1px solid #333;float:left;padding:10px;margin-left:20px;margin-bottom:15px}
+            section article p{font-size:12px}
+            section article h3{padding-bottom:10px}
+
+    aside{text-align:center;float:left;width:580px;background:#ffc;padding:10px 0 30px}
+        aside h2{margin-top:10px}
+        aside img{margin-top:10px}
+
+    footer{clear:both;height:50px;line-height:50px;text-align:center;background:#333;color:#fff}
+    }
+
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    #wrapper{width:800px;margin:0 auto}
+    header{height:205px;background:#f46075 url(../nav2.png) no-repeat right center}
+    header h1{font-family:'Henny penny',cursive;margin-top:50px;margin-left:100px;color:#fff;float:left}
+    nav{height:50px;background:#aaa}
+        nav ul{list-style:none}
+            nav ul li{float:left;margin-left:40px;margin-top:8px}
+                nav ul li a{display:block;width:140px;height:35px;text-decoration:none;color:#fff;font-weight:bold;text-align:center}
+                nav ul li a:hover{background:#f46075;border-radius:18px}
+
+    section{float:left;width:550px;height:500px;background-color:#ddd}
+        section h2{margin-top:10px;margin-bottom:10px;text-align:center}
+        section article{width:220px;height:180px;border:1px solid #333;float:left;padding:10px;margin-left:15px;margin-bottom:15px}
+            section article p{font-size:12px}
+            section article h3{padding-bottom:10px}
+
+    aside{text-align:center;float:left;width:250px;height:500px;background:#ffc}
+        aside h2{margin-top:10px}
+        aside img{margin-top:10px}
+
+    footer{clear:both;height:50px;line-height:50px;text-align:center;background:#333;color:#fff}
+    }
