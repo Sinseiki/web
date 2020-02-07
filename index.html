@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>60FPS Clock</title>
+    <title>FPS Clock</title>
     <script src="jquery-3.4.1.min.js"></script>
     <script>
         function clock(){
@@ -32,7 +32,8 @@
             })
 	    */
         }
-        setInterval(clock,1000/60)
+        var fpsn=prompt('원하시는 FPS(Frame Per Second) 수치를 설정해주세요')
+        setInterval(clock,1000/fpsn)
 
     </script>
 
