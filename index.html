@@ -14,10 +14,10 @@
 
             if(h > 11) h = h - 12;
 
-            var dh = (h * 30) + (m / 2);
-            // dh = parseInt(dh); //정수화
-            var dm = (m * 6) + (s / 10);
             var ds = (s * 6) + (ms * 6 / 1000);
+            var dm = (m * 6) + (ds / 60);
+            var dh = (h * 30) + (dm / 12);
+            // dh = parseInt(dh); //정수화
         
             //window.onload=function(){
                 document.querySelector('.hour').style.transform='rotate('+dh+'deg)'
