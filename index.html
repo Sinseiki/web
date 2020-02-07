@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>sample5</title>
-    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script>
         function clock(){
             var today = new Date();
@@ -18,18 +18,19 @@
             // dh = parseInt(dh); //정수화
             var dm = (m * 6) + (s / 10);
             var ds = (s * 6) + (ms * 6 / 1000);
-    /*
+
             window.onload=function(){
                 document.querySelector('.hour').style.transform='rotate('+dh+'deg)'
                 document.querySelector('.min').style.transform='rotate('+dm+'deg)'
                 document.querySelector('.sec').style.transform='rotate('+ds+'deg)'
             };
-    */
+        /*
             $(function(){
                 $('.hour').css('transform','rotate('+dh+'deg)')
                 $('.min').css('transform','rotate('+dm+'deg)')
                 $('.sec').css('transform','rotate('+ds+'deg)')
             })
+	*/
         }
         setInterval(clock,16.6666666666666667)
 
