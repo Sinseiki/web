@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>60 FPS Clock</title>
-    <!-- <script src="../jquery-3.4.1.min.js"></script> -->
+    <title>sample5</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         function clock(){
             var today = new Date();
@@ -11,29 +11,40 @@
                 var m = today.getMinutes();
                 var s = today.getSeconds();
                 var ms = today.getMilliseconds();
-
+                
             if(h > 11) h = h - 12;
 
             var ds = (s * 6) + (ms * 6 / 1000);
             var dm = (m * 6) + (ds / 60);
             var dh = (h * 30) + (dm / 12);
             // dh = parseInt(dh); //정수화
-        
-            //window.onload=function(){
+    /*
+            window.onload=function(){
                 document.querySelector('.hour').style.transform='rotate('+dh+'deg)'
                 document.querySelector('.min').style.transform='rotate('+dm+'deg)'
                 document.querySelector('.sec').style.transform='rotate('+ds+'deg)'
-            //};
-        /*
+            };
+    */
+    if(ds < 90)        
+    {var mscolor = parseInt(0xffffff - (0x0000ff*ds/90)).toString(16)}
+
+    else if(90 <= ds && ds < 180)
+    {var mscolor = parseInt(0xffff00 - (0x00ff00*((ds/90)-1))).toString(16)}
+
+    else if(180 <= ds && ds < 270)
+    {var mscolor = parseInt(0xff0000 + (0x00ff00*((ds/90)-2))).toString(16)}
+
+    else
+    {var mscolor = parseInt(0xffff00 + (0x0000ff*((ds/90)-3))).toString(16)}
+
+    console.log(mscolor)
             $(function(){
                 $('.hour').css('transform','rotate('+dh+'deg)')
                 $('.min').css('transform','rotate('+dm+'deg)')
-                $('.sec').css('transform','rotate('+ds+'deg)')
+                $('.sec').css('transform','rotate('+ds+'deg)').css('background-color','#'+mscolor)
             })
-	    */
         }
-
-        setInterval(clock,1000/60)
+        setInterval(clock,16.6666666666666667)
 
     </script>
 
@@ -41,6 +52,7 @@
         *{margin:0;padding:0}
         #clock{position:relative;width:300px;height:300px;margin:100px auto 0}
         #clock img{position:absolute;top:0;left:0;display:block}
+        .sec{width:3px;height:140px;transform-origin:50% 100%;position:absolute;right:50%;top:3%}
     </style>
 </head>
 <body>
@@ -48,7 +60,7 @@
         <img alt="clock" src="clock.png"/>
         <img alt="hour" src="h.png" class="hour"/>
         <img alt="min" src="m.png" class="min"/>
-        <img alt="sec" src="s.png" class="sec"/>
+        <div class="sec"></div>
     </div>
 	<div class="digital"></div>
 </body>
